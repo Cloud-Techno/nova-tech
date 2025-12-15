@@ -202,6 +202,11 @@ section {
   border: 2px solid var(--accent-color);
 }
 
+/* Move hero button a bit down from the text above */
+.hero-content .btn {
+  margin-top: 2rem;
+}
+
 /* --- HOME HERO --- */
 #home {
   display: flex;
@@ -266,7 +271,7 @@ section {
   animation: scroll 20s linear infinite;
 }
 .client-logo {
-  width: 200px;
+  width: 300px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
