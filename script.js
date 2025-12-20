@@ -163,81 +163,27 @@ const footerObserver = new IntersectionObserver(
 
 footerElements.forEach((el) => footerObserver.observe(el));
 
+// gemini section
 
+/* === NEW SERVICE SECTIONS ANIMATIONS === */
+// Select all elements with the custom data-animate attribute
+const animateElements = document.querySelectorAll("[data-animate]");
 
+const serviceObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add the active class to trigger CSS transition
+        entry.target.classList.add("animate-active");
+        // Stop observing once animated
+        serviceObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.2, // Trigger when 20% of the element is visible
+    rootMargin: "0px 0px -50px 0px", // Slight offset for smoother feel
+  }
+);
 
-<section class="services">
-  <div class="container">
-
-    <h2 data-en="Our Services"
-        data-de="Unsere Dienstleistungen">
-      Our Services
-    </h2>
-
-    <p class="subtitle"
-       data-en="Powerful digital solutions designed for long-term success"
-       data-de="Leistungsstarke digitale Lösungen für nachhaltigen Erfolg">
-       Powerful digital solutions designed for long-term success
-    </p>
-
-    <div class="service-grid">
-
-      <!-- Web Development -->
-      <div class="service-card">
-        <h3 data-en="Web Development"
-            data-de="Webentwicklung">Web Development</h3>
-
-        <p data-en="We build high-performance, modern and fully customized websites tailored to your business goals. From corporate websites to advanced e-commerce platforms, our solutions focus on speed, security and scalability."
-           data-de="Wir entwickeln leistungsstarke, moderne und individuell angepasste Websites, die exakt auf Ihre Geschäftsziele abgestimmt sind. Von Unternehmenswebsites bis hin zu komplexen E-Commerce-Plattformen stehen Performance, Sicherheit und Skalierbarkeit im Fokus.">
-        </p>
-
-        <p data-en="All our websites are responsive, SEO-friendly and easy to manage, ensuring long-term digital growth for your company."
-           data-de="Alle unsere Websites sind responsiv, SEO-freundlich und leicht zu verwalten – für nachhaltiges digitales Wachstum.">
-        </p>
-      </div>
-
-      <!-- Digital Marketing -->
-      <div class="service-card">
-        <h3 data-en="Digital Marketing"
-            data-de="Digitales Marketing">Digital Marketing</h3>
-
-        <p data-en="Visibility is the key to success. Our data-driven digital marketing strategies help your brand reach the right audience at the right time."
-           data-de="Sichtbarkeit ist der Schlüssel zum Erfolg. Unsere datenbasierten Digital-Marketing-Strategien erreichen genau die Zielgruppe, die für Ihr Unternehmen relevant ist.">
-        </p>
-
-        <p data-en="Through SEO, social media marketing, email campaigns and online advertising, we increase reach, conversions and measurable results."
-           data-de="Durch SEO, Social Media Marketing, E-Mail-Kampagnen und Online-Werbung steigern wir Reichweite, Conversions und messbare Ergebnisse.">
-        </p>
-      </div>
-
-      <!-- UI UX -->
-      <div class="service-card">
-        <h3 data-en="UI / UX Design"
-            data-de="UI / UX Design">UI / UX Design</h3>
-
-        <p data-en="Great design goes beyond visuals. We create intuitive, user-centered interfaces that guide visitors smoothly through your website."
-           data-de="Gutes Design ist mehr als nur Optik. Wir gestalten intuitive, nutzerzentrierte Benutzeroberflächen, die Besucher gezielt führen.">
-        </p>
-
-        <p data-en="Our UI/UX approach increases engagement, trust and conversion rates while strengthening your brand identity."
-           data-de="Unser UI/UX-Ansatz steigert Nutzerbindung, Vertrauen und Conversion-Raten und stärkt Ihre Markenidentität.">
-        </p>
-      </div>
-
-      <!-- Maintenance -->
-      <div class="service-card">
-        <h3 data-en="Website Maintenance"
-            data-de="Website-Wartung">Website Maintenance</h3>
-
-        <p data-en="A professional website requires continuous care. We handle updates, security monitoring and performance optimization."
-           data-de="Eine professionelle Website benötigt kontinuierliche Pflege. Wir übernehmen Updates, Sicherheitsüberwachung und Performance-Optimierung.">
-        </p>
-
-        <p data-en="This ensures your website stays fast, secure and reliable – while you focus on your core business."
-           data-de="So bleibt Ihre Website schnell, sicher und zuverlässig – während Sie sich auf Ihr Kerngeschäft konzentrieren.">
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+animateElements.forEach((el) => serviceObserver.observe(el));
