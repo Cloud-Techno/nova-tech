@@ -191,152 +191,141 @@ animateElements.forEach((el) => serviceObserver.observe(el));
 /* ===============================
    PROJECT DETAIL CONTENT
 ================================ */
-
 const projectData = {
   appointment: {
     en: `
-      <h2>Appointment-Based Business Platform</h2>
+      <h2>Appointment-Based Website</h2>
       <p>
-        A fully customized website developed for businesses that operate with
-        scheduled client appointments. The system focuses on clarity,
-        accessibility, and trust-building through a modern user experience.
+        This website allows businesses to manage client appointments efficiently. The booking process is simple, clear, and professional.
       </p>
 
       <h4>Key Features</h4>
       <ul>
         <li>Online appointment booking with flexible time slots</li>
-        <li>Mobile-friendly and fast-loading interface</li>
-        <li>SEO-optimized structure for local search visibility</li>
-        <li>Google Maps business registration and optimization</li>
-        <li>Google & Meta Ads setup for targeted customer acquisition</li>
+        <li>Fast, mobile-friendly interface</li>
+        <li>Local search optimization with Google Maps</li>
+        <li>Optional Google & Meta Ads to attract new clients</li>
       </ul>
 
-      <h4>Industries This Helps</h4>
+      <h4>Industries That Benefit</h4>
       <ul>
-        <li>Consulting & Coaching services</li>
-        <li>Health & wellness professionals</li>
-        <li>Legal & financial advisors</li>
-        <li>Local service providers</li>
+        <li>Health & wellness (therapists, gyms, yoga)</li>
+        <li>Consulting & coaching</li>
+        <li>Local services like salons, tutoring, repair shops</li>
+        <li>Small businesses that want a professional online presence</li>
       </ul>
     `,
     de: `
-      <h2>Terminbasierte Business-Plattform</h2>
+      <h2>Terminbasierte Website</h2>
       <p>
-        Eine individuell entwickelte Website für Unternehmen, die mit festen
-        Kundenterminen arbeiten. Der Fokus liegt auf Übersichtlichkeit,
-        Benutzerfreundlichkeit und Vertrauen.
+        Diese Website ermöglicht Unternehmen, Kundentermine effizient zu verwalten. Die Buchung ist einfach, übersichtlich und professionell.
       </p>
 
-      <h4>Zentrale Funktionen</h4>
+      <h4>Hauptfunktionen</h4>
       <ul>
         <li>Online-Terminbuchung mit flexiblen Zeitfenstern</li>
-        <li>Mobiloptimiertes und schnelles Design</li>
-        <li>SEO-optimierte Struktur für lokale Sichtbarkeit</li>
-        <li>Google-Maps-Unternehmenseintrag & Optimierung</li>
-        <li>Google- & Meta-Werbekampagnen</li>
+        <li>Schnelle, mobilfreundliche Benutzeroberfläche</li>
+        <li>Optimierung für lokale Suche via Google Maps</li>
+        <li>Optional: Google- & Meta-Werbung zur Kundengewinnung</li>
       </ul>
 
       <h4>Geeignet für Branchen</h4>
       <ul>
+        <li>Gesundheits- & Wellnessanbieter (Therapeuten, Fitnessstudios, Yoga)</li>
         <li>Beratung & Coaching</li>
-        <li>Gesundheits- und Wellnessbereiche</li>
-        <li>Rechts- & Finanzdienstleister</li>
-        <li>Lokale Dienstleistungsunternehmen</li>
+        <li>Lokale Dienstleistungen wie Friseure, Nachhilfe, Reparaturdienste</li>
+        <li>Kleine Unternehmen mit professioneller Online-Präsenz</li>
       </ul>
     `,
   },
 
-  ai: {
+  ecommerce: {
     en: `
-      <h2>AI Automation System</h2>
+      <h2>E-Commerce Platform</h2>
       <p>
-        An AI-powered automation solution designed to reduce repetitive manual
-        work and increase operational efficiency across digital processes.
+        A modern online store that helps businesses sell products efficiently and grow their digital presence.
       </p>
 
-      <h4>Capabilities</h4>
+      <h4>Key Features</h4>
       <ul>
-        <li>AI chatbots for customer inquiries</li>
-        <li>Automated email & form processing</li>
-        <li>Workflow automation via APIs</li>
-        <li>Smart data classification and routing</li>
+        <li>Responsive and visually appealing design</li>
+        <li>Secure payment integration</li>
+        <li>Product catalog and inventory management</li>
+        <li>SEO & performance optimization to attract more customers</li>
       </ul>
 
-      <h4>Ideal For</h4>
+      <h4>Industries That Benefit</h4>
       <ul>
-        <li>Customer support teams</li>
-        <li>Small & medium enterprises</li>
-        <li>Service-based businesses</li>
-        <li>Internal operations optimization</li>
+        <li>Small online retailers</li>
+        <li>Local brands moving digital</li>
+        <li>Subscription-based businesses</li>
+        <li>Any business selling products online</li>
       </ul>
     `,
     de: `
-      <h2>KI-Automatisierungssystem</h2>
+      <h2>E-Commerce-Plattform</h2>
       <p>
-        Eine KI-gestützte Lösung zur Automatisierung wiederkehrender Aufgaben
-        und zur Effizienzsteigerung von Geschäftsprozessen.
+        Ein moderner Online-Shop, der Unternehmen beim Verkauf von Produkten und beim Ausbau ihrer digitalen Präsenz unterstützt.
       </p>
 
-      <h4>Funktionen</h4>
+      <h4>Hauptfunktionen</h4>
       <ul>
-        <li>KI-Chatbots für Kundenanfragen</li>
-        <li>Automatisierte E-Mail- & Formularverarbeitung</li>
-        <li>Workflow-Automatisierung über APIs</li>
-        <li>Intelligente Datenverarbeitung</li>
+        <li>Responsives, ansprechendes Design</li>
+        <li>Sichere Zahlungsintegration</li>
+        <li>Produktkatalog- und Lagerverwaltung</li>
+        <li>SEO- & Performance-Optimierung für mehr Kunden</li>
       </ul>
 
-      <h4>Geeignet für</h4>
+      <h4>Geeignet für Branchen</h4>
       <ul>
-        <li>Kundensupport-Teams</li>
-        <li>Kleine & mittelständische Unternehmen</li>
-        <li>Dienstleistungsbetriebe</li>
-        <li>Interne Prozessoptimierung</li>
+        <li>Kleine Online-Händler</li>
+        <li>Lokale Marken auf digitalem Weg</li>
+        <li>Abo-Modelle und Produktdienste</li>
+        <li>Jedes Unternehmen, das Produkte online verkauft</li>
       </ul>
     `,
   },
 
   cloud: {
     en: `
-      <h2>Cloud Infrastructure with Terraform</h2>
+      <h2>Cloud Infrastructure</h2>
       <p>
-        A scalable cloud infrastructure built using Infrastructure as Code
-        principles, ensuring reliability, security, and easy expansion.
+        A scalable cloud setup built to handle growing business needs. It ensures reliability, security, and simple expansion.
       </p>
 
-      <h4>Highlights</h4>
+      <h4>Key Features</h4>
       <ul>
-        <li>Terraform-based infrastructure setup</li>
-        <li>Automated deployments</li>
+        <li>Infrastructure as Code for consistency</li>
+        <li>Automated deployment and management</li>
         <li>Secure cloud environments</li>
         <li>Cost-efficient scalability</li>
       </ul>
 
-      <h4>Best For</h4>
+      <h4>Industries That Benefit</h4>
       <ul>
         <li>SaaS platforms</li>
-        <li>Growing tech startups</li>
-        <li>Data-driven applications</li>
+        <li>Tech startups</li>
+        <li>Data-heavy applications</li>
       </ul>
     `,
     de: `
-      <h2>Cloud-Infrastruktur mit Terraform</h2>
+      <h2>Cloud-Infrastruktur</h2>
       <p>
-        Skalierbare Cloud-Infrastruktur auf Basis von Infrastructure as Code,
-        für maximale Stabilität und Erweiterbarkeit.
+        Eine skalierbare Cloud-Lösung, die wachsenden Anforderungen gerecht wird. Zuverlässigkeit, Sicherheit und einfache Erweiterbarkeit sind garantiert.
       </p>
 
-      <h4>Highlights</h4>
+      <h4>Hauptfunktionen</h4>
       <ul>
-        <li>Terraform-basierte Systemarchitektur</li>
-        <li>Automatisierte Deployments</li>
+        <li>Infrastructure as Code für konsistente Umgebungen</li>
+        <li>Automatisierte Bereitstellung & Verwaltung</li>
         <li>Sichere Cloud-Umgebungen</li>
         <li>Kostenoptimierte Skalierung</li>
       </ul>
 
-      <h4>Geeignet für</h4>
+      <h4>Geeignet für Branchen</h4>
       <ul>
         <li>SaaS-Plattformen</li>
-        <li>Wachsende Tech-Unternehmen</li>
+        <li>Tech-Startups</li>
         <li>Datenintensive Anwendungen</li>
       </ul>
     `,
@@ -346,19 +335,18 @@ const projectData = {
     en: `
       <h2>IT Support & Network Solutions</h2>
       <p>
-        Complete IT support and network setup for small businesses to ensure
-        stable, secure, and efficient daily operations.
+        Full IT support and network setup to ensure small businesses operate securely and efficiently every day.
       </p>
 
-      <h4>Services</h4>
+      <h4>Key Services</h4>
       <ul>
         <li>Office network planning & installation</li>
-        <li>Firewall & security setup</li>
-        <li>Device configuration & troubleshooting</li>
+        <li>Firewall & security configuration</li>
+        <li>Device setup & troubleshooting</li>
         <li>Ongoing technical support</li>
       </ul>
 
-      <h4>Industries</h4>
+      <h4>Industries That Benefit</h4>
       <ul>
         <li>Small offices</li>
         <li>Retail businesses</li>
@@ -368,70 +356,69 @@ const projectData = {
     de: `
       <h2>IT-Support & Netzwerklösungen</h2>
       <p>
-        Umfassender IT-Support und Netzwerklösungen für kleine Unternehmen
-        zur Sicherstellung eines stabilen Betriebs.
+        Umfassender IT-Support und Netzwerklösungen, damit kleine Unternehmen täglich sicher und effizient arbeiten können.
       </p>
 
-      <h4>Leistungen</h4>
+      <h4>Hauptleistungen</h4>
       <ul>
         <li>Netzwerkplanung & Installation</li>
-        <li>Firewall- & Sicherheitskonzepte</li>
+        <li>Firewall- & Sicherheitskonfiguration</li>
         <li>Gerätekonfiguration & Fehlerbehebung</li>
         <li>Laufender technischer Support</li>
       </ul>
 
-      <h4>Branchen</h4>
+      <h4>Geeignet für Branchen</h4>
       <ul>
         <li>Kleine Büros</li>
         <li>Einzelhandel</li>
-        <li>Dienstleistungsunternehmen</li>
+        <li>Professionelle Dienstleister</li>
       </ul>
     `,
   },
 
-  ecommerce: {
+  ai: {
     en: `
-      <h2>E-Commerce Platform</h2>
+      <h2>AI Automation System</h2>
       <p>
-        A conversion-focused online store designed to help businesses sell
-        products efficiently and scale their digital presence.
+        AI-driven automation to reduce repetitive tasks and speed up business processes, allowing teams to focus on important work.
       </p>
 
-      <h4>Features</h4>
+      <h4>Key Capabilities</h4>
       <ul>
-        <li>Modern and responsive design</li>
-        <li>Secure payment integration</li>
-        <li>Product & inventory management</li>
-        <li>SEO & performance optimization</li>
+        <li>AI chatbots for customer inquiries</li>
+        <li>Automated email & form handling</li>
+        <li>Workflow automation via APIs</li>
+        <li>Smart data classification and routing</li>
       </ul>
 
-      <h4>Perfect For</h4>
+      <h4>Industries That Benefit</h4>
       <ul>
-        <li>Small online retailers</li>
-        <li>Local brands going digital</li>
-        <li>Subscription-based businesses</li>
+        <li>Customer support teams</li>
+        <li>SMEs</li>
+        <li>Service-based businesses</li>
+        <li>Internal operations of companies</li>
       </ul>
     `,
     de: `
-      <h2>E-Commerce-Plattform</h2>
+      <h2>KI-Automatisierungssystem</h2>
       <p>
-        Ein verkaufsoptimierter Online-Shop für Unternehmen, die ihre Produkte
-        professionell und skalierbar online anbieten möchten.
+        KI-gestützte Automatisierung reduziert wiederkehrende Aufgaben und beschleunigt Geschäftsprozesse, damit Teams sich auf wichtige Arbeit konzentrieren können.
       </p>
 
-      <h4>Funktionen</h4>
+      <h4>Hauptfunktionen</h4>
       <ul>
-        <li>Modernes & responsives Design</li>
-        <li>Sichere Zahlungsintegration</li>
-        <li>Produkt- & Lagerverwaltung</li>
-        <li>SEO- & Performance-Optimierung</li>
+        <li>KI-Chatbots für Kundenanfragen</li>
+        <li>Automatisierte E-Mail- & Formularverarbeitung</li>
+        <li>Workflow-Automatisierung über APIs</li>
+        <li>Intelligente Datenklassifizierung und -weiterleitung</li>
       </ul>
 
-      <h4>Geeignet für</h4>
+      <h4>Geeignet für Branchen</h4>
       <ul>
-        <li>Kleine Online-Händler</li>
-        <li>Lokale Marken</li>
-        <li>Abo- & Produktmodelle</li>
+        <li>Kundensupport-Teams</li>
+        <li>Kleine & mittlere Unternehmen</li>
+        <li>Dienstleistungsbetriebe</li>
+        <li>Interne Unternehmensprozesse</li>
       </ul>
     `,
   },
