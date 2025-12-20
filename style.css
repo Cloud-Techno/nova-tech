@@ -626,7 +626,7 @@ footer {
 .footer-bottom {
   transition-delay: 0.5s;
 }
-/* gemini section  */
+/* content detail section  */
 /* ==============================================
    DETAILED SERVICE SECTIONS STYLING
 =============================================== */
@@ -653,7 +653,7 @@ footer {
 .service-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
   max-width: 1200px;
   width: 100%;

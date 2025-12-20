@@ -163,7 +163,7 @@ const footerObserver = new IntersectionObserver(
 
 footerElements.forEach((el) => footerObserver.observe(el));
 
-// gemini section
+// content detail section
 
 /* === NEW SERVICE SECTIONS ANIMATIONS === */
 // Select all elements with the custom data-animate attribute
