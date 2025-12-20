@@ -884,3 +884,50 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* gemini bolümü  */
+
+/* --- SERVICES GRID LIST STYLE --- */
+
+/* Liste genel ayarları */
+.glass-card ul {
+  list-style: none; /* Varsayılan noktaları kaldırır */
+  padding: 0;
+  margin: 1.2rem 0;
+  text-align: left; /* Metinleri sola yaslar */
+}
+
+/* Her bir liste maddesi */
+.glass-card ul li {
+  position: relative;
+  padding-left: 28px; /* İkon için boşluk */
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #cbd5e1; /* Soft gümüş rengi */
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+/* Modern İkon (Checkmark) Ekleme */
+.glass-card ul li::before {
+  content: "\f00c"; /* FontAwesome Check ikonu kodu */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #00eeff; /* Sitenizin vurgu rengi */
+  font-size: 0.85rem;
+  text-shadow: 0 0 8px rgba(0, 238, 255, 0.6); /* Neon parlama */
+}
+
+/* Hover Efekti: Madde üzerine gelince parlasın */
+.glass-card ul li:hover {
+  color: #ffffff;
+  transform: translateX(5px); /* Hafif sağa kayma */
+}
+
+/* Alt diller arası boşluk ayarı (lang-en/lang-de çakışmasını önlemek için) */
+.glass-card ul li span {
+  display: block; /* Maddelerin düzgün hizalanması için */
+}
