@@ -919,26 +919,24 @@ footer {
 
 /* Modern İkon (Checkmark) Ekleme */
 .glass-card ul li::before {
-  content: "\f00c"; /* FontAwesome Check ikonu kodu */
+  content: "\f00c";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
   left: 0;
   top: 2px;
-  color: #00eeff; /* Sitenizin vurgu rengi */
+  color: #00eeff;
   font-size: 0.85rem;
-  text-shadow: 0 0 8px rgba(0, 238, 255, 0.6); /* Neon parlama */
+  text-shadow: 0 0 8px rgba(0, 238, 255, 0.6);
 }
 
-/* Hover Efekti: Madde üzerine gelince parlasın */
 .glass-card ul li:hover {
   color: #ffffff;
-  transform: translateX(5px); /* Hafif sağa kayma */
+  transform: translateX(5px);
 }
 
-/* Alt diller arası boşluk ayarı (lang-en/lang-de çakışmasını önlemek için) */
 .glass-card ul li span {
-  display: block; /* Maddelerin düzgün hizalanması için */
+  display: block;
 }
 
 /* gemini answer  */
