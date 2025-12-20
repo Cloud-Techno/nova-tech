@@ -143,3 +143,22 @@ if (document.getElementById("particles-js")) {
     retina_detect: true,
   });
 }
+
+/* === FOOTER REVEAL ON SCROLL === */
+const footerElements = document.querySelectorAll(".footer-col, .footer-bottom");
+
+const footerObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal");
+        footerObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+footerElements.forEach((el) => footerObserver.observe(el));
