@@ -726,10 +726,10 @@ footer {
 }
 
 .ps-card.problem {
-  border-color: #ff4757;
+  border-color: #fff;
 }
 .ps-card.problem i {
-  color: #ff4757;
+  color: #fff;
 }
 
 .ps-card.solution {
