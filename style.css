@@ -129,8 +129,8 @@ header {
 
 /* --- GENERAL LAYOUT --- */
 section {
-  padding: 120px 8% 80px;
-  min-height: 100vh;
+  padding: 80px 8% 80px;
+  min-height: 80vh;
   position: relative;
 }
 .heading {
@@ -633,7 +633,7 @@ footer {
 
 /* Section Layout */
 .service-detail {
-  padding: 100px 8%;
+  padding: 80px 3%;
   display: flex;
   align-items: center;
   justify-content: center;
