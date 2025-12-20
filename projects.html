@@ -39,87 +39,167 @@
       </nav>
     </header>
 
-    <section>
+    <!-- gemini answer  -->
+    <section id="projects">
       <h2 class="heading">
-        <span class="lang-en">Recent <span>Case Studies</span></span>
-        <span class="lang-de">Aktuelle <span>Fallstudien</span></span>
+        <span class="lang-en">Project <span>Showcase</span></span>
+        <span class="lang-de">Projekt <span>Übersicht</span></span>
       </h2>
 
-      <div class="project-grid">
-        <div class="glass-card project-card">
-          <img
-            src="https://placehold.co/600x400/111/0ef?text=FinTech+App"
-            alt="Fintech"
-          />
-          <h3 class="lang-en">NeoBank Mobile App</h3>
-          <h3 class="lang-de">NeoBank Mobile App</h3>
+      <!-- PROJECT LIST -->
+      <div class="project-grid" id="projectList">
+        <!-- Project 1 -->
+        <div
+          class="glass-card project-card"
+          onclick="openProject('appointment')"
+        >
+          <i class="fa-solid fa-calendar-check service-icon"></i>
+          <h3 class="lang-en">Appointment-Based Platform</h3>
+          <h3 class="lang-de">Terminbasierte Plattform</h3>
           <p class="lang-en">
-            A complete digital transformation for a traditional bank, featuring
-            biometric security and AI-driven spending insights.
+            A professional web platform for businesses working with scheduled
+            client appointments.
           </p>
           <p class="lang-de">
-            Eine komplette digitale Transformation für eine traditionelle Bank
-            mit biometrischer Sicherheit und KI-gesteuerten Ausgabeneinblicken.
+            Eine professionelle Webplattform für Unternehmen mit Terminbetrieb.
           </p>
-
-          <div class="tech-stack">
-            <span class="tech-tag">React Native</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">AWS Cognito</span>
-          </div>
         </div>
 
-        <div class="glass-card project-card">
-          <img
-            src="https://placehold.co/600x400/111/0ef?text=Logistics+AI"
-            alt="Logistics"
-          />
-          <h3 class="lang-en">Smart Logistics AI</h3>
-          <h3 class="lang-de">Smarte Logistik KI</h3>
+        <!-- Project 2 -->
+        <div class="glass-card project-card" onclick="openProject('ai')">
+          <i class="fa-solid fa-robot service-icon"></i>
+          <h3 class="lang-en">AI Automation System</h3>
+          <h3 class="lang-de">KI-Automatisierungssystem</h3>
           <p class="lang-en">
-            Optimization algorithm for route planning that reduced fuel
-            consumption by 35% for a global fleet.
+            Intelligent automation to simplify daily business processes.
           </p>
           <p class="lang-de">
-            Optimierungsalgorithmus für die Routenplanung, der den
-            Kraftstoffverbrauch einer globalen Flotte um 35% senkte.
+            Intelligente Automatisierung für effizientere Geschäftsprozesse.
           </p>
-
-          <div class="tech-stack">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">TensorFlow</span>
-            <span class="tech-tag">Google Maps API</span>
-          </div>
         </div>
 
-        <div class="glass-card project-card">
-          <img
-            src="https://placehold.co/600x400/111/0ef?text=IoT+Hub"
-            alt="IoT"
-          />
-          <h3 class="lang-en">Industrial IoT Dashboard</h3>
-          <h3 class="lang-de">Industrie IoT Dashboard</h3>
+        <!-- Project 3 -->
+        <div class="glass-card project-card" onclick="openProject('cloud')">
+          <i class="fa-solid fa-cloud service-icon"></i>
+          <h3 class="lang-en">Cloud Infrastructure (Terraform)</h3>
+          <h3 class="lang-de">Cloud-Infrastruktur (Terraform)</h3>
           <p class="lang-en">
-            Real-time monitoring system for factory machinery to predict
-            maintenance needs before failure.
+            Scalable cloud environments built with Infrastructure as Code.
           </p>
           <p class="lang-de">
-            Echtzeit-Überwachungssystem für Fabrikmaschinen zur Vorhersage von
-            Wartungsbedarf vor Ausfällen.
+            Skalierbare Cloud-Umgebungen mit Infrastructure as Code.
           </p>
-
-          <div class="tech-stack">
-            <span class="tech-tag">Vue.js</span>
-            <span class="tech-tag">C++</span>
-            <span class="tech-tag">MQTT</span>
-          </div>
         </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card" onclick="openProject('network')">
+          <i class="fa-solid fa-network-wired service-icon"></i>
+          <h3 class="lang-en">IT Support & Network</h3>
+          <h3 class="lang-de">IT-Support & Netzwerk</h3>
+          <p class="lang-en">
+            Reliable IT support and secure network solutions for small
+            businesses.
+          </p>
+          <p class="lang-de">
+            Zuverlässiger IT-Support und sichere Netzwerklösungen.
+          </p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card project-card" onclick="openProject('ecommerce')">
+          <i class="fa-solid fa-cart-shopping service-icon"></i>
+          <h3 class="lang-en">E-Commerce Platform</h3>
+          <h3 class="lang-de">E-Commerce-Plattform</h3>
+          <p class="lang-en">
+            Conversion-focused online shops designed for growth.
+          </p>
+          <p class="lang-de">
+            Umsatzorientierte Online-Shops für nachhaltiges Wachstum.
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJECT DETAIL -->
+      <div id="projectDetail" class="glass-card" style="display: none">
+        <button class="btn" onclick="closeProject()">← Back</button>
+        <div id="projectContent"></div>
       </div>
     </section>
 
-    <footer>
-      <p class="lang-en">&copy; 2024 NovaTech Solutions.</p>
-      <p class="lang-de">&copy; 2024 NovaTech Solutions.</p>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <!-- Brand & About -->
+        <div class="footer-col brand">
+          <h3 class="footer-logo">Swiss<span>DevCloud</span></h3>
+
+          <p class="lang-en">
+            We deliver secure, scalable and future-ready IT & AI solutions for
+            modern businesses.
+          </p>
+          <p class="lang-de">
+            Wir liefern sichere, skalierbare und zukunftsfähige IT- und
+            KI-Lösungen für moderne Unternehmen.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="whatsapp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="lang-en">Services</h4>
+          <h4 class="lang-de">Leistungen</h4>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">AI Automation</a></li>
+            <li><a href="#">Cloud Solutions</a></li>
+            <li><a href="#">IT Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4 class="lang-en">Company</h4>
+          <h4 class="lang-de">Unternehmen</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="lang-en">Contact</h4>
+          <h4 class="lang-de">Kontakt</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Zurich, Switzerland
+            </li>
+            <li><i class="fa-solid fa-envelope"></i> info@swissdevcloud.ch</li>
+            <li><i class="fa-solid fa-phone"></i> +41 77 202 17 58</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="lang-en">© 2024 SwissDevCloud. All rights reserved.</p>
+        <p class="lang-de">© 2024 SwissDevCloud. Alle Rechte vorbehalten.</p>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Imprint</a>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

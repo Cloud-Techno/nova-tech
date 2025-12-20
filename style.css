@@ -931,3 +931,64 @@ footer {
 .glass-card ul li span {
   display: block; /* Maddelerin düzgün hizalanması için */
 }
+
+/* gemini answer  */
+/* ===============================
+   PROJECT DETAIL VIEW
+================================ */
+
+.project-detail {
+  display: none;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.project-detail.active {
+  display: block;
+}
+
+.project-grid.hidden {
+  display: none;
+}
+
+.project-detail h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.project-detail p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail ul {
+  margin: 1.5rem 0;
+}
+
+.project-detail ul li {
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.back-btn i {
+  font-size: 0.9rem;
+}
+
+.back-btn:hover {
+  text-shadow: 0 0 10px var(--accent-glow);
+}
