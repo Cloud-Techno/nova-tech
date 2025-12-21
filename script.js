@@ -194,12 +194,12 @@ animateElements.forEach((el) => serviceObserver.observe(el));
 const projectData = {
   appointment: {
     en: `
-      <h2>Appointment-Based Website</h2>
+      <h2 class="heading">Appointment-Based Website</h2>
       <p>
         This website allows businesses to manage client appointments efficiently. The booking process is simple, clear, and professional.
       </p>
 
-      <h4>Key Features</h4>
+      <h4 class="project-subtitle">Key Features</h4>
       <ul>
         <li>Online appointment booking with flexible time slots</li>
         <li>Fast, mobile-friendly interface</li>
@@ -207,7 +207,7 @@ const projectData = {
         <li>Optional Google & Meta Ads to attract new clients</li>
       </ul>
 
-      <h4>Industries That Benefit</h4>
+      <h4 >Industries That Benefit</h4>
       <ul>
         <li>Health & wellness (therapists, gyms, yoga)</li>
         <li>Consulting & coaching</li>
@@ -216,12 +216,12 @@ const projectData = {
       </ul>
     `,
     de: `
-      <h2>Terminbasierte Website</h2>
+      <h2 class="heading">Terminbasierte Website</h2>
       <p>
         Diese Website ermöglicht Unternehmen, Kundentermine effizient zu verwalten. Die Buchung ist einfach, übersichtlich und professionell.
       </p>
 
-      <h4>Hauptfunktionen</h4>
+      <h4 class="project-subtitle">Hauptfunktionen</h4>
       <ul>
         <li>Online-Terminbuchung mit flexiblen Zeitfenstern</li>
         <li>Schnelle, mobilfreundliche Benutzeroberfläche</li>
@@ -241,12 +241,12 @@ const projectData = {
 
   ecommerce: {
     en: `
-      <h2>E-Commerce Platform</h2>
+      <h2 class="heading">E-Commerce Platform</h2>
       <p>
         A modern online store that helps businesses sell products efficiently and grow their digital presence.
       </p>
 
-      <h4>Key Features</h4>
+      <h4 class="project-subtitle">Key Features</h4>
       <ul>
         <li>Responsive and visually appealing design</li>
         <li>Secure payment integration</li>
@@ -263,12 +263,12 @@ const projectData = {
       </ul>
     `,
     de: `
-      <h2>E-Commerce-Plattform</h2>
+      <h2 class="heading">E-Commerce-Plattform</h2>
       <p>
         Ein moderner Online-Shop, der Unternehmen beim Verkauf von Produkten und beim Ausbau ihrer digitalen Präsenz unterstützt.
       </p>
 
-      <h4>Hauptfunktionen</h4>
+      <h4 class="project-subtitle">Hauptfunktionen</h4>
       <ul>
         <li>Responsives, ansprechendes Design</li>
         <li>Sichere Zahlungsintegration</li>
@@ -288,12 +288,12 @@ const projectData = {
 
   cloud: {
     en: `
-      <h2>Cloud Infrastructure</h2>
+      <h2 class="heading">Cloud Infrastructure</h2>
       <p>
         A scalable cloud setup built to handle growing business needs. It ensures reliability, security, and simple expansion.
       </p>
 
-      <h4>Key Features</h4>
+      <h4 class="project-subtitle">Key Features</h4>
       <ul>
         <li>Infrastructure as Code for consistency</li>
         <li>Automated deployment and management</li>
@@ -309,12 +309,12 @@ const projectData = {
       </ul>
     `,
     de: `
-      <h2>Cloud-Infrastruktur</h2>
+      <h2 class="heading">Cloud-Infrastruktur</h2>
       <p>
         Eine skalierbare Cloud-Lösung, die wachsenden Anforderungen gerecht wird. Zuverlässigkeit, Sicherheit und einfache Erweiterbarkeit sind garantiert.
       </p>
 
-      <h4>Hauptfunktionen</h4>
+      <h4 class="project-subtitle">Hauptfunktionen</h4>
       <ul>
         <li>Infrastructure as Code für konsistente Umgebungen</li>
         <li>Automatisierte Bereitstellung & Verwaltung</li>
@@ -333,12 +333,12 @@ const projectData = {
 
   network: {
     en: `
-      <h2>IT Support & Network Solutions</h2>
+      <h2 class="heading">IT Support & Network Solutions</h2>
       <p>
         Full IT support and network setup to ensure small businesses operate securely and efficiently every day.
       </p>
 
-      <h4>Key Services</h4>
+      <h4 class="project-subtitle">Key Services</h4>
       <ul>
         <li>Office network planning & installation</li>
         <li>Firewall & security configuration</li>
@@ -354,12 +354,12 @@ const projectData = {
       </ul>
     `,
     de: `
-      <h2>IT-Support & Netzwerklösungen</h2>
+      <h2 class="heading">IT-Support & Netzwerklösungen</h2>
       <p>
         Umfassender IT-Support und Netzwerklösungen, damit kleine Unternehmen täglich sicher und effizient arbeiten können.
       </p>
 
-      <h4>Hauptleistungen</h4>
+      <h4 class="project-subtitle">Hauptleistungen</h4>
       <ul>
         <li>Netzwerkplanung & Installation</li>
         <li>Firewall- & Sicherheitskonfiguration</li>
@@ -378,12 +378,12 @@ const projectData = {
 
   ai: {
     en: `
-      <h2>AI Automation System</h2>
+      <h2 class="heading">AI Automation System</h2>
       <p>
         AI-driven automation to reduce repetitive tasks and speed up business processes, allowing teams to focus on important work.
       </p>
 
-      <h4>Key Capabilities</h4>
+      <h4 class="project-subtitle">Key Capabilities</h4>
       <ul>
         <li>AI chatbots for customer inquiries</li>
         <li>Automated email & form handling</li>
@@ -400,12 +400,12 @@ const projectData = {
       </ul>
     `,
     de: `
-      <h2>KI-Automatisierungssystem</h2>
+      <h2 class="heading">KI-Automatisierungssystem</h2>
       <p>
         KI-gestützte Automatisierung reduziert wiederkehrende Aufgaben und beschleunigt Geschäftsprozesse, damit Teams sich auf wichtige Arbeit konzentrieren können.
       </p>
 
-      <h4>Hauptfunktionen</h4>
+      <h4 class="project-subtitle">Hauptfunktionen</h4>
       <ul>
         <li>KI-Chatbots für Kundenanfragen</li>
         <li>Automatisierte E-Mail- & Formularverarbeitung</li>
